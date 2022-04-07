@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="d1"></div>
+    <h2>sort array</h2>
+    <div id="d2"></div>
+    <h2>reverse array</h2>
+    <div id="d3"></div>
+    <h2>push array</h2>
+    <div id="d4"></div>
+    <h2>pop</h2>
+    <div id="d5"></div>
+    <h2>Slice</h2>
+    <div id="d6"></div>
+    <script>
+        var numbers = [34, 30, 1, 45, 67, 90, 80, 40];
+
+        document.getElementById("d1").innerHTML = numbers;
+        numbers.sort();
+        document.getElementById("d2").innerHTML = numbers;
+        numbers.reverse();
+        document.getElementById("d3").innerHTML = numbers;
+        numbers.push(23);
+        document.getElementById("d4").innerHTML = numbers;
+        numbers.pop();
+        document.getElementById("d5").innerHTML = numbers;
+        const num = numbers.slice(1, 3);
+        document.getElementById("d6").innerHTML = num;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<!--create array of string and perform function sort(),reverse(),push(),pop()*/-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <div id="d1"></div>
+
+    <script>
+        var days = ["Monday", "Tuseday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        var data = "<ol type='A'>";
+        for (let i = 0; i < days.length; i++) {
+            data += "<li>" + days[i] + "</li>";
+        }
+        data += "</ol>";
+        document.getElementById("d1").innerHTML = data;
+
+        //reverse array
+        days.reverse();
+        for (let i = 0; i < days.length; i++) {
+            data += "<li>" + days[i] + "</li>";
+        }
+        data += "<ol type='A'>";
+        document.getElementById("d1").innerHTML = data;
+       //sort array
+        days.sort();
+        for (let i = 0; i < days.length; i++) {
+            data += "<li>" + days[i] + "</li>";
+        }
+        data += "<ol type='A'>";
+        document.getElementById("d1").innerHTML = data;
+        //push array--add the last postion in array
+        days.push("March");
+        for (let i = 0; i < days.length; i++) {
+            data += "<li>" + days[i] + "</li>";
+        }
+        data += "<ol type='A'>";
+        document.getElementById("d1").innerHTML = data;
+
+        //pop array-remove last elemet
+        days.pop();
+        for (let i = 0; i < days.length; i++) {
+            data += "<li>" + days[i] + "</li>";
+        }
+        data += "<ol type='A'>";
+        document.getElementById("d1").innerHTML = data;
+        const day = days.slice(1, 5);
+        document.getElementById("d1").innerHTML = day;
+    </script>
+
+</body>
+</html>
